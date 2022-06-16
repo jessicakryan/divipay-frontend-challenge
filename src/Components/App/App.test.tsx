@@ -1,10 +1,10 @@
 import React from 'react';
 import App from './App';
 import { render, within, screen } from '@testing-library/react';
-import categoriesData from '../data/categories.json';
-import merchantsData from '../data/merchants.json';
-import transactionsData from '../data/transactions.json';
-import { Transaction } from '../data/data.types';
+import categoriesData from '../../data/categories.json';
+import merchantsData from '../../data/merchants.json';
+import transactionsData from '../../data/transactions.json';
+import { Transaction } from '../../data/data.types';
 
 const renderApp = ({
   categories = categoriesData,

@@ -1,9 +1,8 @@
-export interface Category {
-  id: string;
-  name: string;
-}
+export type Category = IdName;
 
-export interface Merchant {
+export type Merchant = IdName;
+
+export interface IdName {
   id: string;
   name: string;
 }
