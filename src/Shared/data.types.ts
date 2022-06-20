@@ -1,13 +1,10 @@
-export type Category = IdName;
-
-export type Merchant = IdName;
-
 export interface IdName {
   id: string;
   name: string;
 }
 
-type TransactionStatus = 'complete' | 'exported' | 'incomplete';
+export type Category = IdName;
+export type Merchant = IdName;
 
 export interface Transaction {
   id: string;
@@ -22,3 +19,8 @@ export interface Transaction {
   amount: number;
   category: string;
 }
+
+export type SearchableProperty = Extract<
+  keyof Transaction,
+  'merchant' | 'team_member' | 'category' | 'budget' | 'amount' | 'gst'
+>;
